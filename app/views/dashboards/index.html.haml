@@ -1,0 +1,15 @@
+%h1 This is a Sidekiq & Redis Demo
+%br
+%h2 Welcome
+%br
+%br
+=form_for current_user do |f|
+  .div
+    %h3= f.label :bio, "Bio"
+    = f.text_area :bio
+  .div
+    = f.submit "Enter Bio"
+
+%div
+  %h3
+    =current_user.bio
